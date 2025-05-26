@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projteste": {
+    "Angular8": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projteste",
+            "outputPath": "dist/Angular8",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "projteste:build"
+            "browserTarget": "Angular8:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "projteste:build:production"
+              "browserTarget": "Angular8:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "projteste:build"
+            "browserTarget": "Angular8:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "projteste:serve"
+            "devServerTarget": "Angular8:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "projteste:serve:production"
+              "devServerTarget": "Angular8:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "projteste"
+  "defaultProject": "Angular8"
 }
