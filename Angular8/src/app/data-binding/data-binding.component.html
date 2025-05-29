@@ -1,0 +1,47 @@
+<section>
+  <article>
+
+    <!-- <h3>Interpolation</h3>
+
+    <p>String renderiza Interpolation {{ url }}</p>
+    <p>Resultado de 1 + 1 é {{1 + 1}}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Resultado é {{ cursoAngular && getCurtirCurso() }}</p>
+
+    <article>
+      <img src="{{ urlImagem }}" >
+      <img [src]="urlImagem" >  propertie binding -->
+
+      <!-- usar attr.colspam  quando o conteudo não tiver uma propriedade-->
+
+      <div>
+
+        Selecione uma classe:
+        <select #classe (change)="0">
+          <option value="alert alert-primary">primary</option>
+          <option value="alert alert-secondary">secondary</option>
+          <option value="alert alert-success">success</option>
+          <option value="alert alert-danger">danger</option>
+          <option value="alert alert-warning">warning</option>
+          <option value="alert alert-info">info</option>
+          <option value="alert alert-dark">dark</option>
+        </select>
+        <br><br>
+
+        <div>
+          <div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
+<div class="alert " role="alert" [class.alert-primary]0="classe.value == 'alert-primary'">primary</div>
+<div class="alert " role="alert"></div>
+<div class="alert " role="alert"></div>
+<div class="alert " role="alert"></div>
+<div class="alert " role="alert"></div>
+<div class="alert " role="alert"></div>
+<div class="alert " role="alert"></div>
+        </div>
+
+      </div>
+
+  </article>
+</section>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro-component/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { CursosComponent } from './cursos/cursos.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CursosComponent } from './cursos/cursos.component';
     AppComponent,
     MeuPrimeiroComponent,
     MeuPrimeiro2Component,
-    CursosComponent
+    CursosComponent,
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
